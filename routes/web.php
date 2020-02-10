@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('errores', function(){
+
+    abort(404);
+});
+
 Route::resource('estudiante','EstudiantesController');
 
 Route::resource('tareas','TareasController');
